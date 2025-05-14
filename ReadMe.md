@@ -1,42 +1,68 @@
-# ✈️ Flight Delay Predictor
+# ✈️ Flight Delay Predictor (Tkinter UI)
 
-A console-based application that predicts the probability of a flight being delayed based on key input features such as departure time, weather conditions, and airline. This project was built entirely from scratch without relying on external machine learning libraries, using a custom-built ML engine and logistic regression.
+A desktop application that predicts the probability of a flight being delayed based on user-provided information such as departure time, weather, and airline. This tool is powered by a **custom machine learning engine** (built from scratch using Python) and features a fully interactive **Tkinter-based GUI** for a seamless user experience.
 
 ---
 
 ## 📌 Overview
 
-The Flight Delay Predictor is a lightweight machine learning tool that classifies flights as either **on-time** or **delayed** based on several features provided by the user. It uses a custom logistic regression model trained using basic gradient-based optimization techniques.
-
-The goal of this project was to:
-- Understand the mathematical foundations of machine learning
-- Implement a custom ML model from scratch
-- Build a functional user interface to interact with the model
-- Create a practical, real-world application in the aviation sector
+The Flight Delay Predictor combines a handcrafted logistic regression model with a clean and intuitive user interface. It allows users to input common flight attributes and instantly receive a predicted probability of delay. This project was created to deepen understanding of machine learning internals while delivering a functional and realistic application in the travel and aviation domain.
 
 ---
 
-## 🚀 How It Works
+## 🖥️ Application Features
 
-The application asks the user for basic flight data (departure time, airline, weather, etc.) and outputs the probability of a delay.
+- Fully interactive **Tkinter GUI** — no console input required
+- Predicts **real-time flight delay probability**
+- Powered by a **custom logistic regression model**
+- Clean layout with labeled fields and intuitive form structure
+- Real-time probability output in a user-friendly format
 
-### User Inputs:
-- `Departure time (0–23)`
-- `Flight distance (e.g., 500–2500)`
-- `Airline code (0–2)`
-- `Airport code (0–2)`
-- `Day of the week (0 = Monday, 6 = Sunday)`
-- `Month (1–12)`
-- `Weather condition (0 = Clear, 1 = Cloudy, 2 = Storm)`
+---
 
-### Example Output:
-Please enter flight info below:
-Departure time (0–23): 7
-Distance (e.g., 500–2500): 567
-Airline code (0–2): 2
-Airport code (0–2): 2
-Day of week (0=Mon, 6=Sun): 5
-Month (1–12): 4
-Weather condition (0=Clear, 1=Cloudy, 2=Storm): 2
+## 🧰 Tech Stack
 
-🛫 Probability of flight delay: 21.27%
+| Component              | Description                            |
+|------------------------|----------------------------------------|
+| **Language**           | Python                                 |
+| **User Interface**     | Tkinter (standard GUI library)         |
+| **ML Algorithm**       | Logistic Regression (custom-built)     |
+| **Optimization**       | Gradient Descent (manually implemented)|
+| **Training Data**      | Structured flight data (custom Data) |
+
+---
+
+## 🛠️ How It Works
+
+1. User launches the Tkinter app.
+2. A form appears asking for:
+   - Departure time
+   - Flight distance
+   - Airline
+   - Airport
+   - Day of the week
+   - Month
+   - Weather condition
+3. The app processes the input through a trained logistic regression model.
+4. The output is a clear message:
+   **"🛫 Probability of flight delay: XX.XX%"**
+
+---
+
+## 🔮 Future Enhancements
+
+- Add live flight data integration via public APIs (e.g., FAA, FlightAware)
+- Deploy as a web app or cross-platform desktop app
+- Implement advanced optimizers (Adam, RMSProp)
+- Introduce feature selection and performance
+---
+
+## 👨‍💻 Author
+
+Built by Aaron Serro as part of a machine learning from-scratch initiative. This project serves as a complete ML pipeline — from raw input to live prediction — all without using any external ML libraries.
+
+---
+
+## 📜 License
+
+Licensed under the MIT License.
